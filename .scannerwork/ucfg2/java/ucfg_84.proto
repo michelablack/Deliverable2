@@ -1,49 +1,0 @@
-
-bean.File#hashCode()IL
-BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaB B("4*Ù
-2L
-BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaE2 E(6à
-Ö
-L
-BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaE2 E(6
-%4java.lang.String"__id**
-	bean.File"
-name†ù
-L
-BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaE2 E(A	
-%3int"java.lang.String#hashCode()I*
-
-%4java.lang.String2
-hashCode()n
-l
-L
-BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaE2 E(A	
-%1int"__id*
-	
-%3int*
-1*∆
-3L
-BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaE. E(/n
-l
-L
-BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaE. E(/	
-%1int"__id*
-	
-%2int*
-1*‰
-4L
-BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaC C(à
-Ö
-L
-BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaE E("
-%0java.lang.String"__id**
-	bean.File"
-name*
-2
-3*©
-1L
-BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaE E(B"V
-L
-BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaF F(
-""B
-	bean.File

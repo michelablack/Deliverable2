@@ -1,240 +1,0 @@
-
-glogic.QueryGenerator#isInGit(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Boolean;Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÇ Ç("8*√
-3Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaê ê("c
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaê
- ê(
-""*á
-5Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaé é(/û
-õ
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaé é(/
-	lineColonjava.lang.String"__id*
-
-%25java.lang.String*
-3
-1*Ë
-6Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaç ç(+ú
-ô
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaç ç(+
-lineDotjava.lang.String"__id*
-
-%24java.lang.String„‡
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaé é(.
-%25java.lang.String"3java.io.BufferedReader#readLine()Ljava/lang/String;*)
-'
-stdInputColonjava.io.BufferedReader2
-readLine()*
-5*«
-7Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaç ç(·ﬁ
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaç ç(*
-%24java.lang.String"3java.io.BufferedReader#readLine()Ljava/lang/String;*'
-%
-stdInputDotjava.io.BufferedReader2
-readLine()*
-6*Ï+
-8Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÉ É(ü
-ú
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÉ É(
-%0java.lang.String"__id*!*
-logic.QueryGenerator"
-git∏
-µ
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÉ É(
-%1java.lang.String"__concat*
-
-%0java.lang.String*
-
-folderjava.lang.String¢
-ü
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÉ É(#
-%2java.lang.String"__concat*
-
-%1java.lang.String*
-\\∫
-∑
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÉ É(,
-%3java.lang.String"__concat*
-
-%2java.lang.String*
-
-projNamejava.lang.String∑
-¥
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÉ É(F
-%4java.lang.String"__concat*
-
-%3java.lang.String*
- --no-pager log --grep=õ
-ò
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÉ É(G
-commandjava.lang.String"__id*
-
-%4java.lang.Stringß
-§
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÑ Ñ(+
-%5java.lang.String"__concat*
-
-commandjava.lang.String*
-\"µ
-≤
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÑ Ñ(/
-%6java.lang.String"__concat*
-
-%5java.lang.String*
-
-keyjava.lang.String§
-°
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÑ Ñ(6
-%7java.lang.String"__concat*
-
-%6java.lang.String*
-. \"ˆ
-Û
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÑ Ñ(7
-%8java.lang.Process"Ilogic.QueryGenerator#processNoWait(Ljava/lang/String;)Ljava/lang/Process;*"
-logic.QueryGenerator*
-
-%7java.lang.Stringö
-ó
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÑ Ñ(8
-pDotjava.lang.Process"__id*
-
-%8java.lang.Process∫
-∑
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÖ! Ö(,
-%9java.lang.String"__concat*
-
-commandjava.lang.String*
-
-keyjava.lang.String¢
-ü
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÖ! Ö(0
-%10java.lang.String"__concat*
-
-%9java.lang.String*
-:¯
-ı
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÖ Ö(1
-%11java.lang.Process"Ilogic.QueryGenerator#processNoWait(Ljava/lang/String;)Ljava/lang/Process;*"
-logic.QueryGenerator*
-
-%10java.lang.Stringù
-ö
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÖ Ö(2
-pColonjava.lang.Process"__id*
-
-%11java.lang.Processÿ
-’
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÜ Ü(
-%12void"4logic.QueryGenerator#exception(Ljava/lang/Process;)V*"
-logic.QueryGenerator*
-
-pDotjava.lang.Process⁄
-◊
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaá á(
-%13void"4logic.QueryGenerator#exception(Ljava/lang/Process;)V*"
-logic.QueryGenerator*
-
-pColonjava.lang.Process‚ﬂ
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaâ" â(7
-%14java.io.InputStream"7java.lang.Process#getInputStream()Ljava/io/InputStream;*
-
-pDotjava.lang.Process2getInputStream()õò
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaâ â(! 
-%15java.io.InputStreamReader"java.io.InputStreamReader·
-ﬁ
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaà2 â(8
-%16"8java.io.InputStreamReader#<init>(Ljava/io/InputStream;)V*"
- 
-%15java.io.InputStreamReader*
-
-%14java.io.InputStreamïí
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaà# à(1
-%17java.io.BufferedReader"java.io.BufferedReader‹
-Ÿ
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaà â(9
-%18"0java.io.BufferedReader#<init>(Ljava/io/Reader;)V*
-
-%17java.io.BufferedReader*"
- 
-%15java.io.InputStreamReader¨
-©
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaà â(:%
-stdInputDotjava.io.BufferedReader"__id*
-
-%17java.io.BufferedReader‰·
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaã" ã(9
-%19java.io.InputStream"7java.lang.Process#getInputStream()Ljava/io/InputStream;*
-
-pColonjava.lang.Process2getInputStream()õò
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaã ã(! 
-%20java.io.InputStreamReader"java.io.InputStreamReader·
-ﬁ
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaä4 ã(:
-%21"8java.io.InputStreamReader#<init>(Ljava/io/InputStream;)V*"
- 
-%20java.io.InputStreamReader*
-
-%19java.io.InputStreamïí
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaä% ä(3
-%22java.io.BufferedReader"java.io.BufferedReader‹
-Ÿ
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaä! ã(;
-%23"0java.io.BufferedReader#<init>(Ljava/io/Reader;)V*
-
-%22java.io.BufferedReader*"
- 
-%20java.io.InputStreamReaderÆ
-´
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaä ã(<'
-stdInputColonjava.io.BufferedReader"__id*
-
-%22java.io.BufferedReader*
-7*√
-1Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaï	 ï("c
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaï ï(
-"":
-folderjava.lang.String:
-projNamejava.lang.String:
-keyjava.lang.StringB"
-logic.QueryGenerator

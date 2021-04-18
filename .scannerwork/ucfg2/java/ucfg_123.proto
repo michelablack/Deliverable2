@@ -1,98 +1,0 @@
-
-1bean.Property#getInstance()Ljava/util/Properties;P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (%"9*í
-4P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (;ò
-ï
-P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (;
-bean.Property"
-input"__id*
-
-%4java.io.FileInputStreamî
-ë
-P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (
-%6java.util.Properties"__id**
-bean.Property"
-propî
-ë
-P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (
-%7java.io.InputStream"__id**
-bean.Property"
-inputÏÈ
-P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (
-
-%8void"1java.util.Properties#load(Ljava/io/InputStream;)V*
-
-%6java.util.Properties*
-
-%7java.io.InputStream2load(Ljava/io/InputStream;)*
-1*º
-5P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java  (:çä
-P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (
-%4java.io.FileInputStream"java.io.FileInputStreamœ
-Ã
-P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (;
-%5"3java.io.FileInputStream#<init>(Ljava/lang/String;)V*
-
-%4java.io.FileInputStream*
-resources\\configuration*
-4*Ù
-7P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (î
-ë
-P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (
-%3java.io.InputStream"__id**
-bean.Property"
-input*
-5
-1*ó
-8P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (#áÑ
-P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (!
-%1java.util.Properties"java.util.Propertiesô
-ñ
-P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (#
-%2"java.util.Properties#<init>()V*
-
-%1java.util.Propertiesî
-ë
-P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (#
-bean.Property"
-prop"__id*
-
-%1java.util.Properties*
-7*Ù
-9P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (î
-ë
-P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java (
-%0java.util.Properties"__id**
-bean.Property"
-prop*
-7
-8*‡
-1P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java% %(ï
-í
-P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java% %(
-%17java.util.Properties"__id**
-bean.Property"
-prop"q
-P
-FC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Property.java% %(
-
-%17java.util.PropertiesB"
-bean.Property

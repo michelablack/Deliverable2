@@ -1,702 +1,0 @@
-
-Ologic.Utils#writeDataset(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)VP
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java˜ ˜( "65*ù
-24P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java´ ´(Cš—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java´ ´(C
-%49java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-
-%48java.lang.String2 append(Ljava/lang/CharSequence;)*
-23*¢
-25P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java´  ´(BÃ
-À
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java´  ´(B
-%48java.lang.String"-java.lang.String#valueOf(F)Ljava/lang/String;*"
-java.lang.String*
-
-%47float*
-24*€
-26P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java´ ´(¡ž
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java´/ ´(A
-%47float"bean.File#getAvgChurn()F*
-
-file	bean.File2getAvgChurn()*
-25*å
-27P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java³ ³(†ƒ
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java³ ³($
-%46java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-,2 append(Ljava/lang/CharSequence;)*
-26*ù
-28P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java² ²(@š—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java² ²(@
-%45java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-
-%44java.lang.String2 append(Ljava/lang/CharSequence;)*
-27*¢
-29P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java²  ²(?Ã
-À
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java²  ²(?
-%44java.lang.String"-java.lang.String#valueOf(F)Ljava/lang/String;*"
-java.lang.String*
-
-%43float*
-28*ú
-30P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java² ²(›˜
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java²/ ²(>
-%43float"bean.File#getChurn()F*
-
-file	bean.File2
-getChurn()*
-29*å
-31P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java± ±(†ƒ
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java± ±($
-%42java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-,2 append(Ljava/lang/CharSequence;)*
-30*ù
-32P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java° °(Fš—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java° °(F
-%41java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-
-%40java.lang.String2 append(Ljava/lang/CharSequence;)*
-31*¢
-33P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java°  °(EÃ
-À
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java°  °(E
-%40java.lang.String"-java.lang.String#valueOf(F)Ljava/lang/String;*"
-java.lang.String*
-
-%39float*
-32*†
-34P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java° °(§¤
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java°/ °(D
-%39float"bean.File#getMaxLocAdded()F*
-
-file	bean.File2getMaxLocAdded()*
-33*å
-35P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¯ ¯(†ƒ
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¯ ¯($
-%38java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-,2 append(Ljava/lang/CharSequence;)*
-34*ù
-36P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java® ®(Fš—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java® ®(F
-%37java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-
-%36java.lang.String2 append(Ljava/lang/CharSequence;)*
-35*¢
-37P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java®  ®(EÃ
-À
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java®  ®(E
-%36java.lang.String"-java.lang.String#valueOf(F)Ljava/lang/String;*"
-java.lang.String*
-
-%35float*
-36*†
-38P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java® ®(§¤
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java®/ ®(D
-%35float"bean.File#getAvgLocAdded()F*
-
-file	bean.File2getAvgLocAdded()*
-37*å
-39P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java­ ­(†ƒ
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java­ ­($
-%34java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-,2 append(Ljava/lang/CharSequence;)*
-38*ù
-40P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¬ ¬(Fš—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¬ ¬(F
-%33java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-
-%32java.lang.String2 append(Ljava/lang/CharSequence;)*
-39*¢
-41P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¬  ¬(EÃ
-À
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¬  ¬(E
-%32java.lang.String"-java.lang.String#valueOf(F)Ljava/lang/String;*"
-java.lang.String*
-
-%31float*
-40*†
-42P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¬ ¬(§¤
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¬/ ¬(D
-%31float"bean.File#getSumLocAdded()F*
-
-file	bean.File2getSumLocAdded()*
-41*å
-43P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java« «(†ƒ
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java« «($
-%30java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-,2 append(Ljava/lang/CharSequence;)*
-42*Ú
-44P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaª ª(”
-‘
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaª ª((
-%28java.util.List"__id* *
-logic.Utils"
-releaseListä
-á
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaª ª(2
-%29void"9logic.Utils#fillVoidFields(Ljava/util/List;ILbean/File;)V*"
-logic.Utils*
-
-%28java.util.List*
-""*
-
-file	bean.File*
-43*È
-45P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java© ©(é
-æ
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java© ©(/
-%27void"5logic.Utils#setMetrics(Ljava/util/List;ILbean/File;)V*"
-logic.Utils* 
-
-revisionListjava.util.List*
-""*
-
-file	bean.File*
-44*ù
-46P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¨ ¨(/š—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¨ ¨(/
-%26java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-
-%25java.lang.String2 append(Ljava/lang/CharSequence;)*
-45*”
-47P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¨ ¨(µ²
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¨  ¨(.
-%25java.lang.String"%bean.File#getName()Ljava/lang/String;*
-
-file	bean.File2	getName()*
-46*å
-48P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java§ §(†ƒ
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java§ §($
-%24java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-,2 append(Ljava/lang/CharSequence;)*
-47*ù
-49P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¦ ¦(4š—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¦ ¦(4
-%23java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-
-%22java.lang.String2 append(Ljava/lang/CharSequence;)*
-48*ž
-50P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¥ ¥(>
-
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¥ ¥(>
-file	bean.File"__id*
-
-%21	bean.File»
-¸
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¦  ¦(3
-%22java.lang.String"-java.lang.String#valueOf(I)Ljava/lang/String;*"
-java.lang.String*
-""*
-49*ó
-51P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¥; ¥(<”
-‘
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¥ ¥(=
-%21	bean.File"
-__arrayGet*
-
-%20java.util.List*
-""*
-50*•
-52P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¥ ¥(6¶³
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¥ ¥(6
-%20java.util.List"&bean.Release#getList()Ljava/util/List;*
-
-%19bean.Release2	getList()*
-51*
-53P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¥ ¥(%”
-‘
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¥ ¥(%
-%18java.util.List"__id* *
-logic.Utils"
-releaseList—
-”
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¥ ¥(,
-%19bean.Release"
-__arrayGet*
-
-%18java.util.List*
-""*
-52*
-10P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¼ ¼(£ 
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¼/ ¼(B
-%63float"bean.File#getMaxChgSet()F*
-
-file	bean.File2getMaxChgSet()*
-9*ý
-55P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¤! ¤(Dš—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¤! ¤(D
-
-%17int"java.util.List#size()I*
-
-%16java.util.List2size()*
-60
-53*å
-11P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java» »(†ƒ
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java» »($
-%62java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-,2 append(Ljava/lang/CharSequence;)*
-10*•
-56P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¤! ¤(=¶³
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¤! ¤(=
-%16java.util.List"&bean.Release#getList()Ljava/util/List;*
-
-%15bean.Release2	getList()*
-55*ù
-12P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaº º(Dš—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaº º(D
-%61java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-
-%60java.lang.String2 append(Ljava/lang/CharSequence;)*
-11*
-57P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¤ ¤(”
-‘
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¤! ¤(,
-%14java.util.List"__id* *
-logic.Utils"
-releaseList—
-”
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¤! ¤(3
-%15bean.Release"
-__arrayGet*
-
-%14java.util.List*
-""*
-56*¢
-13P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaº  º(CÃ
-À
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaº  º(C
-%60java.lang.String"-java.lang.String#valueOf(F)Ljava/lang/String;*"
-java.lang.String*
-
-%59float*
-12*‚
-14P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaº º(£ 
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaº/ º(B
-%59float"bean.File#getAvgChgSet()F*
-
-file	bean.File2getAvgChgSet()*
-13*å
-15P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¹ ¹(†ƒ
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¹ ¹($
-%58java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-,2 append(Ljava/lang/CharSequence;)*
-14*ù
-16P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¸ ¸(Eš—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¸ ¸(E
-%57java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-
-%56java.lang.String2 append(Ljava/lang/CharSequence;)*
-15*¢
-17P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¸  ¸(DÃ
-À
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¸  ¸(D
-%56java.lang.String"-java.lang.String#valueOf(F)Ljava/lang/String;*"
-java.lang.String*
-
-%55float*
-16*„
-18P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¸ ¸(¥¢
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¸/ ¸(C
-%55float"bean.File#getChgSetSize()F*
-
-file	bean.File2getChgSetSize()*
-17*å
-19P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java· ·(†ƒ
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java· ·($
-%54java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-,2 append(Ljava/lang/CharSequence;)*
-18*n
-0 "g
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaÅ Å(
-implicit return*å
-4P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¿ ¿(‡„
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¿ ¿(%
-%69java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-\n2 append(Ljava/lang/CharSequence;)*
-57*÷
-5P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¾ ¾(2š—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¾ ¾(2
-%68java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-
-%67java.lang.String2 append(Ljava/lang/CharSequence;)*
-4*˜
-6P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¾ ¾(»¸
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¾  ¾(1
-%67java.lang.String"(bean.File#getIsBuggy()Ljava/lang/String;*
-
-file	bean.File2getIsBuggy()*
-5*ã
-7P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java½ ½(†ƒ
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java½ ½($
-%66java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-,2 append(Ljava/lang/CharSequence;)*
-6*÷
-8P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¼ ¼(Dš—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¼ ¼(D
-%65java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-
-%64java.lang.String2 append(Ljava/lang/CharSequence;)*
-7* 
-9P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¼  ¼(CÃ
-À
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¼  ¼(C
-%64java.lang.String"-java.lang.String#valueOf(F)Ljava/lang/String;*"
-java.lang.String*
-
-%63float*
-8*“
-60P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java£ £(”
-‘
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java£  £(+
-%12java.util.List"__id* *
-logic.Utils"
-releaseListš—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java£  £(2
-
-%13int"java.util.List#size()I*
-
-%12java.util.List2size()*
-57
-0*æ
-62P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¢ ¢(‡„
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¢ ¢(#
-%11java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-\n2 append(Ljava/lang/CharSequence;)*
-60*¡
-63P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaž ž(5™
-–
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaž ž(5 
-
-fileWriterjava.io.FileWriter"__id*
-
-%7java.io.FileWriterŠ
-‡
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java  ¡(?
-%9java.lang.String"__concat*^\
-ZVersion, File Name, Loc Added, Avg Loc Added, Max Loc Added, Churn, Avg Churn, Max Churn, *1/
--Chg Set Size, Avg Chg Set, Max Chg Set, Buggy™–
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java  ¡(@
-%10java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-
-%9java.lang.String2 append(Ljava/lang/CharSequence;)*
-62*«
-64P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaž- ž(4ƒ€
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaž" ž(,
-%7java.io.FileWriter"java.io.FileWriterÆ
-Ã
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaž ž(5
-%8".java.io.FileWriter#<init>(Ljava/lang/String;)V*
-
-%7java.io.FileWriter*
-
-outnamejava.lang.String*
-63*ù
-20P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¶ ¶(Cš—
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¶ ¶(C
-%53java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-
-%52java.lang.String2 append(Ljava/lang/CharSequence;)*
-19*è
-65P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java™ ™(™
-–
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java™ ™(;
-%0java.util.List"Tlogic.QueryGenerator#listFiles(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;*"
-logic.QueryGenerator*
-
-projNamejava.lang.String*
-
-folderjava.lang.String¹
-¶
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java™ ™(<
-
-%1void"-logic.Utils#setReleaseList(Ljava/util/List;)V*"
-logic.Utils*
-
-%0java.util.Listœ
-™
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaš  š(M
-%2java.util.List"Wlogic.QueryGenerator#getRevisions(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;*"
-logic.QueryGenerator*
-
-folderjava.lang.String*
-
-projNamejava.lang.String“
-
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaš š(N
-revisionListjava.util.List"__id*
-
-%2java.util.List¼
-¹
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java› ›(D
-
-%3void"_logic.QueryGenerator#getRevisionsChanges(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V*"
-logic.QueryGenerator* 
-
-revisionListjava.util.List*
-
-folderjava.lang.String*
-
-projNamejava.lang.String“
-
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaœ œ(&
-%4java.util.List"__id* *
-logic.Utils"
-releaseListç
-ä
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaœ œ('
-
-%5void";logic.Utils#setBugginess(Ljava/util/List;Ljava/util/List;)V*"
-logic.Utils*
-
-
-buggyFilesjava.util.List*
-
-%4java.util.List¨
-¥
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java (+
-%6java.lang.String"__concat*
-
-projNamejava.lang.String*
-Dataset.csv’
-
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java (,
-outnamejava.lang.String"__id*
-
-%6java.lang.String*
-64*¢
-21P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¶  ¶(BÃ
-À
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¶  ¶(B
-%52java.lang.String"-java.lang.String#valueOf(F)Ljava/lang/String;*"
-java.lang.String*
-
-%51float*
-20*€
-22P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¶ ¶(¡ž
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java¶/ ¶(A
-%51float"bean.File#getMaxChurn()F*
-
-file	bean.File2getMaxChurn()*
-21*å
-23P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaµ µ(†ƒ
-P
-DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaµ µ($
-%50java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
- 
-
-fileWriterjava.io.FileWriter*
-,2 append(Ljava/lang/CharSequence;)*
-22:
-
-buggyFilesjava.util.List:
-projNamejava.lang.String:
-folderjava.lang.StringB"
-logic.Utils

@@ -1,62 +1,0 @@
-
-Slogic.QueryGenerator#clone(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Process;Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÐ Ð("1*ü
-1Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÑ Ñ(Ÿ
-œ
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÑ Ñ(
-%0java.lang.String"__id*!*
-logic.QueryGenerator"
-git¸
-µ
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÑ Ñ(!
-%1java.lang.String"__concat*
-
-%0java.lang.String*
-
-folderjava.lang.String§
-¤
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÑ Ñ(,
-%2java.lang.String"__concat*
-
-%1java.lang.String*	
- clone ¹
-¶
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÑ Ñ(5
-%3java.lang.String"__concat*
-
-%2java.lang.String*
-
-projUrljava.lang.Stringð
-í
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÑ Ñ(6
-%4java.lang.Process"Clogic.QueryGenerator#process(Ljava/lang/String;)Ljava/lang/Process;*"
-logic.QueryGenerator*
-
-%3java.lang.String—
-”
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÑ Ñ(7
-pjava.lang.Process"__id*
-
-%4java.lang.ProcessÔ
-Ñ
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÒ Ò(
-
-%5void"4logic.QueryGenerator#exception(Ljava/lang/Process;)V*"
-logic.QueryGenerator*
-
-pjava.lang.Process"u
-Y
-MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÓ Ó(
-
-pjava.lang.Process:
-folderjava.lang.String:
-projUrljava.lang.StringB"
-logic.QueryGenerator
