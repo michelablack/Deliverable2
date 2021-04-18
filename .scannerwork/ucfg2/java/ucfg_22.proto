@@ -1,0 +1,124 @@
+
+%bean.Bug#toString()Ljava/lang/String;K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java: :("1*Ï
+1K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java;	 ;(‹
+ˆ
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java; ;(*
+%0java.util.Date"__id**
+
+bean.Bug"
+openVersion¡
+ž
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java;	 ;(*
+%1java.lang.String"__concat*
+Bug [openVersion=*
+
+%0java.util.DateŸ
+œ
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java;	 ;(<
+%2java.lang.String"__concat*
+
+%1java.lang.String*
+, injVersion=Š
+‡
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java;? ;(I
+%3java.util.Date"__id**
+
+bean.Bug"
+
+injVersion¤
+¡
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java;	 ;(I
+%4java.lang.String"__concat*
+
+%2java.lang.String*
+
+%3java.util.DateŸ
+œ
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java;	 ;([
+%5java.lang.String"__concat*
+
+%4java.lang.String*
+, fixVersion=Š
+‡
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java;^ ;(h
+%6java.util.Date"__id**
+
+bean.Bug"
+
+fixVersion¤
+¡
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java;	 ;(h
+%7java.lang.String"__concat*
+
+%5java.lang.String*
+
+%6java.util.Date˜
+•
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java;	 <(
+%8java.lang.String"__concat*
+
+%7java.lang.String*
+
+, key=…
+‚
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java< <(
+%9java.lang.String"__id**
+
+bean.Bug"
+key§
+¤
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java;	 <(
+%10java.lang.String"__concat*
+
+%8java.lang.String*
+
+%9java.lang.Stringž
+›
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java;	 <(#
+%11java.lang.String"__concat*
+
+%10java.lang.String*
+
+, release=†
+ƒ
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java<& <(-
+%12bean.Release"__id**
+
+bean.Bug"	
+release¥
+¢
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java;	 <(-
+%13java.lang.String"__concat*
+
+%11java.lang.String*
+
+%12bean.Release•
+’
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java;	 <(3
+%14java.lang.String"__concat*
+
+%13java.lang.String*
+]"h
+K
+AC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/Bug.java; <(4
+
+%14java.lang.StringB
+
+bean.Bug

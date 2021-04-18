@@ -1,0 +1,55 @@
+
+7logic.Utils#readAll(Ljava/io/Reader;)Ljava/lang/String;N
+DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.java? ?("4*Ω
+2N
+DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaD
+ D(‚ﬂ
+N
+DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaD
+ D(
+%3java.lang.StringBuilder":java.lang.StringBuilder#append(C)Ljava/lang/StringBuilder;*
+
+sbjava.lang.StringBuilder*
+""2	append(C)*
+3*Ù
+3N
+DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaC C(ñì
+N
+DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaC C(	
+%2int"java.io.Reader#read()I*
+
+rdjava.io.Reader2read()*
+2
+1*¢
+4N
+DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaA A(-ãà
+N
+DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaA A(+
+%0java.lang.StringBuilder"java.lang.StringBuilderù
+ö
+N
+DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaA A(-
+%1"!java.lang.StringBuilder#<init>()V*
+
+%0java.lang.StringBuilderô
+ñ
+N
+DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaA A(.
+sbjava.lang.StringBuilder"__id*
+
+%0java.lang.StringBuilder*
+3*ê
+1N
+DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaF F(ŒÀ
+N
+DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaF F(
+%4java.lang.String"4java.lang.StringBuilder#toString()Ljava/lang/String;*
+
+sbjava.lang.StringBuilder2
+toString()"j
+N
+DC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Utils.javaF F(
+
+%4java.lang.String:
+rdjava.io.ReaderB"
+logic.Utils

@@ -1,0 +1,18 @@
+
+Anull#compare(Ljava/time/LocalDateTime;Ljava/time/LocalDateTime;)IW
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/GetReleaseInfo.java; ;("1*ê
+1W
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/GetReleaseInfo.java< <(¨¥
+W
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/GetReleaseInfo.java< <($	
+%0int"Jjava.time.LocalDateTime#compareTo(Ljava/time/chrono/ChronoLocalDateTime;)I*
+
+o1java.time.LocalDateTime*
+
+o2java.time.LocalDateTime21compareTo(Ljava/time/chrono/ChronoLocalDateTime;)"a
+W
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/GetReleaseInfo.java< <(%
+"":
+o1java.time.LocalDateTime:
+o2java.time.LocalDateTimeB
+Llogic/GetReleaseInfo$2058;

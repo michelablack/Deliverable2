@@ -1,0 +1,127 @@
+
+%bean.File#equals(Ljava/lang/Object;)ZL
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaJ J("startingBlock*©
+2L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaV
+ V("V
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaV V(
+""*◊
+3L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaU U(à
+Ö
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaU U(
+%4java.lang.String"__id**
+	bean.File"
+nameè
+å
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaU U($
+%5java.lang.String"__id**
+
+other	bean.File"
+nameﬁ€
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaU U(%
+%6boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%4java.lang.String*
+
+%5java.lang.String2equals(Ljava/lang/Object;)*
+2
+1*É
+startingBlockL
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaJ J("ñ
+ì
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaI I(
+
+%7"
+__annotate*
+java.lang.Override*
+
+objjava.lang.Object
+}
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaJ J(!
+objjava.lang.Object"__annotation*
+
+%7*
+
+8
+9
+11*©
+4L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaT T("V
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaT T(
+""*Î
+5L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaS S(è
+å
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaS S(
+%3java.lang.String"__id**
+
+other	bean.File"
+name*
+4
+1*Ì
+6L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaQ Q(Ü
+É
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaQ Q(
+other	bean.File"__id*
+
+objjava.lang.Objectà
+Ö
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaR R(
+
+%2java.lang.String"__id**
+	bean.File"
+name*
+3
+5*©
+7L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaP
+ P("V
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaP P(
+""*Õ
+8L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaO O(±Æ
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaO O(
+%0java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*
+	bean.File2
+getClass()Ω∫
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaO O("
+%1java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*
+
+objjava.lang.Object2
+getClass()*
+6
+7*©
+9L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaN
+ N("V
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaN N(
+""*™
+11L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaL
+ L("V
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaL L(
+""*©
+1L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaW	 W("V
+L
+BC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/bean/File.javaW W(
+"":
+objjava.lang.ObjectB
+	bean.File

@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.Date;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -53,13 +52,8 @@ public class GetReleaseInfo {
                          name,id);
            }
         }
-        // order releases by date
-        Collections.sort(releases, new Comparator<LocalDateTime>(){
-        //@Override
-	        public int compare(LocalDateTime o1, LocalDateTime o2) {
-	            return o1.compareTo(o2);
-            }
-        });
+        Collections.sort(releases, (o1, o2) -> o1.compareTo(o2));
+        
         if (releases.size() < 6) return;
         String outname = projName + "VersionInfo.csv";
 	    //Name of CSV for output
@@ -148,43 +142,7 @@ public class GetReleaseInfo {
 	
 			initialVersion = setInitialVersion(file,initialVersion);
 			finalVersion = setFinalVersion(file,finalVersion);
-			/* If the file addition date is grater then the last version date, it is taken
-			this one as the initial version for the file. */
-			/**if ((file.getFileAdded().compareTo(list.get(list.size()-1).getDate())) >= 0){
-				initialVersion = list.size()-1;
-			}*/
-			/* If the file deletion date is grater then the last version date and it's
-			not null, it is taken this one as the final version for the file. */
-			/**if ((file.getFileDeleted() != null) &&
-				(file.getFileDeleted().compareTo(list.get(list.size()-1).getDate())) >= 0) {
-				finalVersion = list.size()-1;
-			}*/
-			/* If the file addition date is grater then the i-th version date and lower then the 
-			next one (i+1-th), it is taken this one as the initial version for the file. */
-			/**if (initialVersion == 0) {
-				for (int i = 0; i < list.size()-1; i++) {
-					if ((file.getFileAdded().compareTo(list.get(i).getDate()) >= 0)
-							&& (file.getFileAdded().compareTo(list.get(i+1).getDate()) < 0) ) {
-						initialVersion = i;
-					}
-				}
-			}*/
-			/* If the file deletion date is grater then the i-th version date and lower then the 
-			next one (i+1-th), it is taken this one as the final version for the file. */
-			/**if ((finalVersion == 0) && (file.getFileDeleted() != null)) {
-				for (int i = 0; i < list.size()-1; i++) {
-					if  ((file.getFileDeleted().compareTo(list.get(i).getDate()) >= 0) &&
-						(file.getFileDeleted().compareTo(list.get(i+1).getDate()) < 0)) {
-						finalVersion = i;
-					}
-				}
-			}*/
-			/* If there isn't a deletion date for the file, it is considered the last one 
-			as the final version for the file*/
-			/**if (file.getFileDeleted() == null) {
-				finalVersion = list.size()-1;
-			}
-			*/
+			
 			/* It is considered every version in which there is the given file.
 			It is taken the list of files for each version and then the file is added to this list. 
 			The file is added only if it is the first occurrence for that list */

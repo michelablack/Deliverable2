@@ -1,0 +1,226 @@
+
+9logic.Proportional#calculateProportion(Ljava/util/List;)DU
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java, ,(*"16*‰
+13U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java7 7(¢Ÿ
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java7 7($	
+%1int"java.util.List#size()I*
+
+bugListjava.util.List2size()*
+1
+12*€
+3U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.javaR R(	
+š
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.javaR R(1
+%26long"java.lang.Math#round(D)J*"
+java.lang.Math*
+""*
+13*¼
+15U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java4
+ 4("_
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java4 4(
+""*”
+16U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java- -(¬©
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java3 3(
+%0boolean"java.util.List#isEmpty()Z*
+
+bugListjava.util.List2	isEmpty()*
+13
+15*Û
+11U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java> >(œ
+™
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java> >('
+%23bean.Bug"
+__arrayGet*
+
+bugListjava.util.List*
+""µ²
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java> >(4
+%24bean.Release"#bean.Bug#getRelease()Lbean/Release;*
+
+%23bean.Bug2getRelease()š
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java> >(<
+
+%25int"bean.Release#getFv()I*
+
+%24bean.Release2getFv()*
+13
+3*¤
+12U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java8 8(›
+˜
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java8% 8(3
+%2bean.Bug"
+__arrayGet*
+
+bugListjava.util.List*
+""›
+˜
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java85 8(C
+%3bean.Bug"
+__arrayGet*
+
+bugListjava.util.List*
+""½º
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java85 8(S
+%4java.util.Date"(bean.Bug#getFixVersion()Ljava/util/Date;*
+
+%3bean.Bug2getFixVersion()ð
+í
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java8 8(T
+
+%5void"Dlogic.GetReleaseInfo#getFixVersionIndex(Lbean/Bug;Ljava/util/Date;)V*"
+logic.GetReleaseInfo*
+
+%2bean.Bug*
+
+%4java.util.Date›
+˜
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java9& 9(4
+%6bean.Bug"
+__arrayGet*
+
+bugListjava.util.List*
+""›
+˜
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java96 9(D
+%7bean.Bug"
+__arrayGet*
+
+bugListjava.util.List*
+""¿¼
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java96 9(U
+%8java.util.Date")bean.Bug#getOpenVersion()Ljava/util/Date;*
+
+%7bean.Bug2getOpenVersion()ñ
+î
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java9 9(V
+
+%9void"Elogic.GetReleaseInfo#getOpenVersionIndex(Lbean/Bug;Ljava/util/Date;)V*"
+logic.GetReleaseInfo*
+
+%6bean.Bug*
+
+%8java.util.Dateœ
+™
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java:% :(3
+%10bean.Bug"
+__arrayGet*
+
+bugListjava.util.List*
+""œ
+™
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java:5 :(C
+%11bean.Bug"
+__arrayGet*
+
+bugListjava.util.List*
+""¿¼
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java:5 :(S
+%12java.util.Date"(bean.Bug#getInjVersion()Ljava/util/Date;*
+
+%11bean.Bug2getInjVersion()ó
+ð
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java: :(T
+%13void"Dlogic.GetReleaseInfo#getInjVersionIndex(Lbean/Bug;Ljava/util/Date;)V*"
+logic.GetReleaseInfo*
+
+%10bean.Bug*
+
+%12java.util.Dateœ
+™
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java; ;(
+%14bean.Bug"
+__arrayGet*
+
+bugListjava.util.List*
+""µ²
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java; ;(#
+%15bean.Release"#bean.Bug#getRelease()Lbean/Release;*
+
+%14bean.Bug2getRelease()š
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java; ;(+
+
+%16int"bean.Release#getFv()I*
+
+%15bean.Release2getFv()œ
+™
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java< <(
+%17bean.Bug"
+__arrayGet*
+
+bugListjava.util.List*
+""µ²
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java< <(#
+%18bean.Release"#bean.Bug#getRelease()Lbean/Release;*
+
+%17bean.Bug2getRelease()š
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java< <(+
+
+%19int"bean.Release#getIv()I*
+
+%18bean.Release2getIv()œ
+™
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java= =(
+%20bean.Bug"
+__arrayGet*
+
+bugListjava.util.List*
+""µ²
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java= =(#
+%21bean.Release"#bean.Bug#getRelease()Lbean/Release;*
+
+%20bean.Bug2getRelease()š
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.java= =(+
+
+%22int"bean.Release#getOv()I*
+
+%21bean.Release2getOv()*
+13
+3
+11*Û
+1U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.javaV	 V(
+š
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.javaV	 V(
+%27long"java.lang.Math#round(D)J*"
+java.lang.Math*
+"""_
+U
+KC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/Proportional.javaV V(
+"":
+bugListjava.util.ListB"
+logic.Proportional

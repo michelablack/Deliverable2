@@ -13,7 +13,7 @@ import bean.Release;
 
 public class GetTickets {
 	
-	static String folder = "C:\\Users\\miche";
+	static String folder = "..\\..";
 	static String projName;
 	static String url;
 	static String releaseDate = "releaseDate";

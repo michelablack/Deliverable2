@@ -1,0 +1,55 @@
+
+Clogic.QueryGenerator#process(Ljava/lang/String;)Ljava/lang/Process;Y
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.java‡ ‡("8*‘
+5Y
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.java„ „(&ó
+î
+Y
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.java„ „(&
+pjava.lang.Process"__id*
+
+%1java.lang.Process‘
+—
+Y
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.java‰ ‰(
+
+%2void"4logic.QueryGenerator#interrupt(Ljava/lang/Process;)V*"
+logic.QueryGenerator*
+
+pjava.lang.Process*
+1*Ì
+6Y
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.java„! „(%áÑ
+Y
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.java„ „(&
+%1java.lang.Process"=java.lang.Runtime#exec(Ljava/lang/String;)Ljava/lang/Process;*
+
+%0java.lang.Runtime*
+
+codejava.lang.String2exec(Ljava/lang/String;)*
+5*ß
+7Y
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.java„ „(¡
+æ
+Y
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.java„ „(
+%0java.lang.Runtime"1java.lang.Runtime#getRuntime()Ljava/lang/Runtime;*"
+java.lang.Runtime*
+6*Í
+8Y
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.java· ·(Ñ
+Å
+Y
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.java· ·(
+pjava.lang.Process"__id*
+""*
+7*’
+1Y
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÈ	 È(
+"u
+Y
+MC:/Users/miche/OneDrive/Desktop/work_repo/trunk/src/logic/QueryGenerator.javaÈ È(
+
+pjava.lang.Process:
+codejava.lang.StringB"
+logic.QueryGenerator
