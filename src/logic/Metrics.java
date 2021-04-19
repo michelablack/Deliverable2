@@ -27,7 +27,7 @@ public class Metrics {
 		/*considering the last file in the list allFiles which
 		has the same name as the one considered.*/
 		int index = allFiles.lastIndexOf(file);
-		File newFile = new File();
+		File newFile = new File(file);
 		newFile.setLocAdded(locAdd);
 		newFile.setLocDeleted(locDel);
 		newFile.setLastIndex(index);
@@ -45,16 +45,6 @@ public class Metrics {
 			*/
 			newFile.setSumLocAdded(sumLocAdded);
 			newFile.setSumLocDeleted(sumLocDeleted);
-			/**if (newFile.getName().equals("bookkeeper-benchmark/src/main/java/org/apache/bookkeeper/benchmark/BenchBookie.java")) {
-				System.out.println("LOCADDED "+newFile.getLocAdded());
-				System.out.println("PREVLOCADDED "+prevFile.getLocAdded());
-				System.out.println("PREVSUMLOCADDED "+prevFile.getSumLocAdded());
-				System.out.println("SUMLOCADDED "+newFile.getSumLocAdded());
-				System.out.println("LOCDELETED "+newFile.getLocDeleted());
-				System.out.println("PREVLOCDELETED "+prevFile.getLocDeleted());
-				System.out.println("PREVSUMLOCDELETED "+prevFile.getSumLocDeleted());
-				System.out.println("SUMLOCDELETED "+newFile.getSumLocDeleted());
-			}*/
 			/*---------METRIC CHURN----------
 			*calculated as the sum of added-deleted LOC
 			*in a revision of the considered file.

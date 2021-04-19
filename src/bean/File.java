@@ -29,7 +29,31 @@ public class File{
 	public File() {
 		super();
 	}
-
+	
+	public File(File original) {
+	    this.name = original.name;
+		this.fileAdded = original.fileAdded;
+		this.fileDeleted = original.fileDeleted;
+		this.isBuggy = original.isBuggy;
+		this.buggy = original.buggy;
+		this.version = original.version;
+		this.lastIndex = original.lastIndex;
+		this.num = original.num;
+		this.sumLocAdded = original.sumLocAdded;
+		this.sumLocDeleted = original.sumLocDeleted;
+		this.maxLocAdded = original.maxLocAdded;
+		this.avgLocAdded = original.avgLocAdded;
+		this.churn = original.churn;
+		this.maxChurn = original.maxChurn;
+		this.avgChurn = original.avgChurn;
+		this.chgSetSize = original.chgSetSize;
+		this.sumChgSetSize = original.sumChgSetSize;
+		this.maxChgSet = original.maxChgSet;
+		this.avgChgSet = original.avgChgSet;
+		this.locAdded = original.locAdded;
+		this.locDeleted = original.locDeleted;
+	}
+	
 	public Date getFileAdded() {
 		return fileAdded;
 	}
@@ -214,7 +238,6 @@ public class File{
 		this.sumChgSetSize = sumChgSetSize;
 	}
 
-
 	@Override
 	public String toString() {
 		return ""+name+"";
@@ -227,7 +250,6 @@ public class File{
 	public void setSumLocDeleted(float sumLocDeleted) {
 		this.sumLocDeleted = sumLocDeleted;
 	}
-
 
 	
 	
