@@ -3,7 +3,6 @@ package bean;
 import java.util.Date;
 import java.util.List;
 
-import bean.Release;
 
 public class Revision {
 	

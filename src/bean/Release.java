@@ -86,27 +86,6 @@ public class Release {
 	public String toString() {
 		return "Release [index=" + index + ", files=" + files + "]";
 	}
-	/**@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Release other = (Release) obj;
-		if (index != other.index)
-			return false;
-		return true;
-	}*/
-
-	public List<File> getFiles() {
-		return files;
-	}
-
-	public void setFiles(List<File> files) {
-		this.files = files;
-	}
-
+	
 
 }

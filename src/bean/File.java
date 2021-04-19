@@ -214,12 +214,6 @@ public class File implements Cloneable{
 		this.sumChgSetSize = sumChgSetSize;
 	}
 
-	
-	@Override
-	public File clone() throws CloneNotSupportedException {
-		return (File) super.clone();
-	}
-
 	@Override
 	public String toString() {
 		return ""+name+"";

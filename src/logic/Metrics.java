@@ -27,13 +27,7 @@ public class Metrics {
 		/*considering the last file in the list allFiles which
 		has the same name as the one considered.*/
 		int index = allFiles.lastIndexOf(file);
-		File newFile = null;
-		try {
-			newFile = file.clone();
-		} catch (CloneNotSupportedException e) {
-			e.printStackTrace();
-			return;
-		}
+		File newFile = new File();
 		newFile.setLocAdded(locAdd);
 		newFile.setLocDeleted(locDel);
 		newFile.setLastIndex(index);
