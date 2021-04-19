@@ -2,7 +2,7 @@ package bean;
 
 import java.util.Date;
 
-public class File implements Cloneable{
+public class File{
 	
 	private String name;
 	private Date fileAdded;
@@ -214,6 +214,7 @@ public class File implements Cloneable{
 		this.sumChgSetSize = sumChgSetSize;
 	}
 
+
 	@Override
 	public String toString() {
 		return ""+name+"";
@@ -226,6 +227,7 @@ public class File implements Cloneable{
 	public void setSumLocDeleted(float sumLocDeleted) {
 		this.sumLocDeleted = sumLocDeleted;
 	}
+
 
 	
 	
