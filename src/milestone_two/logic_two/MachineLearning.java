@@ -48,6 +48,12 @@ public class MachineLearning {
 		UtilsML.datasetWriter(datasets,projName);
 	}
 	
+	/**
+	 * Implementation of Walk-Forward as evaluation technique.
+	 * The data-set is divided into parts in a chronological way, so that, 
+	 * to predict following releases, the classifiers are trained on previous ones.
+	 * @param listRelease, list of all the projects' releases.
+	 */
 	private static void walkforward(List<Release> listRelease) {
 		DataSource source = null;
 		Instances dataset = null;
@@ -63,13 +69,18 @@ public class MachineLearning {
 			trainingRelease = i+1;
 			int size = listRelease.get(i).getList().size();
 			int size2 = listRelease.get(i+1).getList().size();
+			//considering as training set the previous data-set instances
 			trainingSet = new Instances(dataset, 0, (int)(listRelease.get(i).getList().get(size-1).getNum()));
+			//considering as testing set the following data-set instances
 			testingSet = new Instances(dataset, (int)listRelease.get(i).getList().get(size-1).getNum(), 
 				(int)(listRelease.get(i+1).getList().get(size2-1).getNum())-(int)(listRelease.get(i).getList().get(size-1).getNum()));
-		classifierSelection();
+			classifierSelection();
 		}
 	}
 	
+	/**
+	 * Classifier selection, based on enumeration between the alternatives
+	 */
 	private static void classifierSelection(){
 		for (Classifier c : Enumeration.Classifier.values()) {
 			classifier = c;
@@ -77,6 +88,11 @@ public class MachineLearning {
 		}
 	}
 	
+	/**
+	 * Implementation of the Feature Selection techniques,
+	 * considering the no-feature selection case and the 
+	 * best-first one.
+	 */
 	private static void featureSelection() {
 		for (Feature f : Enumeration.Feature.values()) {
 			feature = f;
@@ -128,6 +144,13 @@ public class MachineLearning {
 		}
 	}
 	
+	/**
+	 * Implementation of the Sampling Selection techniques, 
+	 * by considering all the given alternatives and passing to 
+	 * each one the needed parameters.
+	 * @param training, folds selected as training;
+	 * @param testing, folds selected as testing.
+	 */
 	private static void samplingSelection(Instances training, Instances testing) {
 		for (Sampling s : Enumeration.Sampling.values()) {
 			sampling = s;
@@ -140,7 +163,7 @@ public class MachineLearning {
 				evaluate(filteredTraining, filteredTesting, null);
 				break;
 			case OVER_SAMPLING:
-				String sampleSizePercent = String.valueOf(2.0*majorityClass(filteredTraining, false));
+				String sampleSizePercent = String.valueOf(2.0*labelPercentage(filteredTraining, false));
 				Resample  resample = new Resample();
 				String[] optsOver = new String[]{"-B", "1.0", "-Z", sampleSizePercent, "-no-replacement"};
 				try {
@@ -181,6 +204,13 @@ public class MachineLearning {
 		}
 	}
 	
+	/**
+	 * Evaluation of the classifiers accuracy, in terms of
+	 * Precision, Recall, AUC and Kappa.
+	 * @param training, folds selected as training;
+	 * @param testing, folds selected as testing;
+	 * @param fc, filtered classifier.
+	 */
 	private static void evaluate(Instances training, Instances testing, FilteredClassifier fc) {
 		weka.classifiers.Classifier cl = null;
 		switch (classifier) {
@@ -251,8 +281,8 @@ public class MachineLearning {
 		double sizeDataset =  trainingSet.numInstances() + (double)testingSet.numInstances();
 		double trainingPercentage = trainingSet.numInstances()/ sizeDataset;
 		
-		double defectiveInTrainPerc = majorityClass(training, true);
-		double defectiveInTestPerc = majorityClass(testing, true);
+		double defectiveInTrainPerc = labelPercentage(training, true);
+		double defectiveInTestPerc = labelPercentage(testing, true);
 		
 		Dataset dataset = new Dataset(); 
 		dataset.setDataset(projName);
@@ -276,7 +306,16 @@ public class MachineLearning {
 		datasets.add(dataset);
 	}
 	
-	private static double majorityClass(Instances dataset, boolean choice) {
+	/**
+	 * Calculating the buggy label percentage in the selected data-set fold.
+	 * This method is used both for the defecting percentage in test-set and 
+	 * train-set, and for the for the over-sampling technique's sample size 
+	 * percentage.
+	 * @param dataset, given fold of data;
+	 * @param evaluate, specifying request origin.
+	 * @return prevalent label percentage.
+	 */
+	private static double labelPercentage(Instances dataset, boolean evaluate) {
 		int numInstances = dataset.numInstances();
 		double yes=0;
 		double no=0;
@@ -290,15 +329,15 @@ public class MachineLearning {
 				no++;
 			}
 		}
-		
 		double numInstancesDouble = (double)dataset.numInstances();
 		
-		if (choice) {
+		if (evaluate) {
 			return yes/numInstancesDouble;
 		}
 		
 		if (yes>no)
 			return yes/numInstancesDouble;
+		
 		return no/numInstancesDouble;
 	}
 
