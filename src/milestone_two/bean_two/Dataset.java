@@ -22,6 +22,7 @@ public class Dataset {
 	private double recall;
 	private double rocArea;
 	private double kappa;
+	private String sensType;
 	
 	public String getDataset() {
 		return data;
@@ -120,11 +121,16 @@ public class Dataset {
 		this.kappa = kappa;
 	}
 	
+	public void setSensitivity(String sensType) {
+		this.sensType = sensType;
+	}
+	
 	public String toStringForDataset() {
 		return data + ", " + trainingRelease + ", "+ trainingPercentage + ", "+defectiveInTrainPerc+", " + defectiveInTestPerc + 
-				", "+ classifier + ", " + feature + ", " + sampling + ", " + truePositive+ ", " + falsePositive + 
+				", "+ classifier + ", " + feature + ", " + sensType + ", " + sampling + ", " + truePositive+ ", " + falsePositive + 
 				", " + trueNegative + ", "+ falseNegative + ", " + precision + ", " + recall + ", " + rocArea+ ", " 
 				+ kappa + "\n";
 	}
+	
 }
 

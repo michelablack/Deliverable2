@@ -112,7 +112,7 @@ public class UtilsML {
 		String outname = projName + "MachineLearning.csv";
 		try (FileWriter fileWriter = new FileWriter(outname)){
 	            fileWriter.append("Dataset, #TrainingRelease, %training, %Defective in training, %Defective in testing, Classifier, "  
-	            						+"Feature Selection, Balancing, TP, FP, TN, FN, Precision, Recall, ROC Area, Kappa");
+	            						+"Feature Selection, Sensitivity, Balancing, TP, FP, TN, FN, Precision, Recall, ROC Area, Kappa");
 	            fileWriter.append("\n");
 	            for (Dataset dataset : datasets) {
 	    			fileWriter.append(dataset.toStringForDataset());

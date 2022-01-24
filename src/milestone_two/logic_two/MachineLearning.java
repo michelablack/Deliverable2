@@ -2,9 +2,7 @@ package milestone_two.logic_two;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.logging.Logger;
 
 import milestone_one.bean.Property;
 import milestone_one.bean.Release;
@@ -13,12 +11,14 @@ import milestone_two.bean_two.Enumeration;
 import milestone_two.bean_two.Enumeration.Classifier;
 import milestone_two.bean_two.Enumeration.Feature;
 import milestone_two.bean_two.Enumeration.Sampling;
+import milestone_two.bean_two.Enumeration.Sensitivity;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.attributeSelection.CfsSubsetEval;
 import weka.attributeSelection.GreedyStepwise;
+import weka.classifiers.CostMatrix;
 import weka.classifiers.Evaluation;
-import weka.classifiers.meta.FilteredClassifier;
+import weka.classifiers.meta.CostSensitiveClassifier;
 import weka.classifiers.trees.RandomForest;
 import weka.classifiers.bayes.NaiveBayes;
 import weka.core.converters.ConverterUtils.DataSource;
@@ -32,10 +32,11 @@ public class MachineLearning {
 	static Instances trainingSet = null;
 	static Instances testingSet = null;
 	static String projName = Property.getInstance().getProperty("PROJECT");
-	private static final Logger log = LoggerFactory.getLogger(MachineLearning.class.getName());
+	private static final Logger log = Logger.getLogger(MachineLearning.class.getName());
 	static Enumeration.Classifier classifier = null;
 	static Enumeration.Feature feature = null;
 	static Enumeration.Sampling sampling = null;
+	static Enumeration.Sensitivity sensitivity = null;
 	static String exception= "Exception";
 	static List<Dataset> datasets = new ArrayList<>();
 	static int trainingRelease;
@@ -62,7 +63,7 @@ public class MachineLearning {
 			source = new DataSource(projName+"Dataset.arff");
 			dataset = source.getDataSet();
 		} catch (Exception e) {
-			log.debug(exception);
+			log.info(e.getMessage());
 		}
 		
 		for (int i=0; i<listRelease.size()-1; i++) {
@@ -104,7 +105,11 @@ public class MachineLearning {
 				int numAttrFilteredNoFS = training.numAttributes();
 				training.setClassIndex(numAttrFilteredNoFS-1);
 				testing.setClassIndex(numAttrFilteredNoFS-1);
-				samplingSelection(training, testing) ;
+				try {
+					samplingSelection(training, testing) ;
+				} catch (Exception e1) {
+					log.info(e1.getMessage());
+				}
 				break;
 				
 			case BEST_FIRST:
@@ -132,9 +137,8 @@ public class MachineLearning {
 					filteredTesting = Filter.useFilter(testing, filter);
 					filteredTesting.setClassIndex(numAttrFiltered - 1);
 				} catch (Exception e) {
-					log.debug(exception);
+					log.info(e.getMessage());
 				}
-				
 				samplingSelection(filteredTraining, filteredTesting);
 				break;
 
@@ -150,17 +154,16 @@ public class MachineLearning {
 	 * each one the needed parameters.
 	 * @param training, folds selected as training;
 	 * @param testing, folds selected as testing.
+	 * @throws Exception 
 	 */
-	private static void samplingSelection(Instances training, Instances testing) {
+	private static void samplingSelection(Instances training, Instances testing){
 		for (Sampling s : Enumeration.Sampling.values()) {
 			sampling = s;
-			FilteredClassifier fc = new FilteredClassifier();
-			
-			Instances filteredTraining = new Instances(training);
-			Instances filteredTesting = new Instances(testing);
+			Instances filteredTraining = training;
+			Instances filteredTesting = testing;
 			switch (sampling) {
 			case NO_SAMPLING:
-				evaluate(filteredTraining, filteredTesting, null);
+				sensitivitySelection(filteredTraining, testing);
 				break;
 			case OVER_SAMPLING:
 				String sampleSizePercent = String.valueOf(2.0*labelPercentage(filteredTraining, false));
@@ -169,34 +172,33 @@ public class MachineLearning {
 				try {
 					resample.setOptions(optsOver);
 					resample.setInputFormat(training);
+					filteredTraining = Filter.useFilter(training, resample);
 				} catch (Exception e) {
-					log.debug(exception);
-				}
-								
-				fc.setFilter(resample);
-				
-				evaluate(filteredTraining, filteredTesting, fc);
+					log.info(e.getMessage());
+				}	
+				sensitivitySelection(filteredTraining, filteredTesting);
 				break;
 			case UNDER_SAMPLING:
 				SpreadSubsample  spreadSubsample = new SpreadSubsample();
 				String[] optsUnder = new String[]{ "-M", "1.0"};
 				try {
 					spreadSubsample.setOptions(optsUnder);
+					spreadSubsample.setInputFormat(training);
+					filteredTraining = Filter.useFilter(training, spreadSubsample);
 				} catch (Exception e) {
-					log.debug(exception);
+					log.info(e.getMessage());
 				}
-				fc.setFilter(spreadSubsample);
-				evaluate(filteredTraining, filteredTesting, fc);
+				sensitivitySelection(filteredTraining, filteredTesting);
 				break;
 			case SMOTE:
 				SMOTE smote = new SMOTE();
 				try {
 					smote.setInputFormat(filteredTraining);
+					filteredTraining = Filter.useFilter(training, smote);
 				} catch (Exception e) {
-					log.debug(exception);
+					log.info(e.getMessage());
 				}
-				fc.setFilter(smote);
-				evaluate(filteredTraining, filteredTesting, fc);
+				sensitivitySelection(filteredTraining, filteredTesting);
 				break;
 			default:
 				break;
@@ -205,14 +207,58 @@ public class MachineLearning {
 	}
 	
 	/**
+	 * Crating a cost matrix, based on weights.
+	 * @param cfn, weight false negative;
+	 * @param cfp, weight false positive.
+	 * @return 2*2 cost matrix used for sensitive evaluation.
+	 */
+	private static CostMatrix costMatrix(double cfn, double cfp) {
+		CostMatrix costMatrix = new CostMatrix(2);
+		costMatrix.setCell(0, 0, 0.0);
+		costMatrix.setCell(0, 1, cfn);
+		costMatrix.setCell(1, 0, cfp);
+		costMatrix.setCell(1, 1, 0.0);
+		return costMatrix;
+		
+	}
+	
+	/**
+	 * Selection of the classifier type for evaluation.
+	 * We can have no cost sensitive classifiers or cost sensitive
+	 * ones, which are further divided in those with sensitive
+	 * threshold and those with sensitive learning.
+	 * @param training, folds selected as training;
+	 * @param testing, folds selected as testing.
+	 */
+	private static void sensitivitySelection(Instances training, Instances testing) {
+		for (Sensitivity s : Enumeration.Sensitivity.values()) {
+			sensitivity = s;
+			switch (sensitivity) {
+			case NO_COST_SENSITIVE:
+				evaluate(training, testing, null);
+				break;
+			case SENSITIVE_THRESHOLD:
+				evaluate(training, testing, true);
+				break;
+			case SENSITIVE_LEARNING:
+				evaluate(training, testing, false);
+				break;	
+			}
+		}
+		
+	}
+	
+	/**
 	 * Evaluation of the classifiers accuracy, in terms of
 	 * Precision, Recall, AUC and Kappa.
 	 * @param training, folds selected as training;
 	 * @param testing, folds selected as testing;
-	 * @param fc, filtered classifier.
+	 * @param sensType, representing the classifier type.
+	 * @throws Exception 
 	 */
-	private static void evaluate(Instances training, Instances testing, FilteredClassifier fc) {
+	private static void evaluate(Instances training, Instances testing, Boolean sensType) {
 		weka.classifiers.Classifier cl = null;
+		
 		switch (classifier) {
 		case NAIVE_BAYES:
 			cl = new NaiveBayes();
@@ -226,58 +272,12 @@ public class MachineLearning {
 		default:
 			break;
 		}
-		Evaluation evaluation = null;
-		if (fc != null) {
-			
-			fc.setClassifier(cl);
-			
-			try {
-				fc.buildClassifier(training);
-				evaluation = new Evaluation(testing);
-				evaluation.evaluateModel(fc, testing);
-			} catch (Exception e) {
-				log.debug(exception);
-				return;
-			}
-		}
-		else {
-			try {
-				if (Objects.isNull(cl)) {
-					return;
-				}
-				cl.buildClassifier(training);
-				evaluation = new Evaluation(testing);
-				evaluation.evaluateModel(cl, testing);
-			} catch (Exception e) {
-				log.debug(exception);
-			}
-		}
+		Evaluation evaluation = buildModel(sensType,cl,training, testing);
+		
+
 		if (Objects.isNull(evaluation)) {
 			return;
 		}
-		log.info("Classifier: {}, Feature: {}, Sampling: {}, number of training release: {}", 
-				classifier, feature, sampling, trainingRelease);
-		log.info("Kappa: {}, Recall: {}", evaluation.kappa(), evaluation.recall(1));
-	
-		String confusion = evaluation.confusionMatrix()[0][0]+", "+evaluation.confusionMatrix()[0][1]+", "+evaluation.confusionMatrix()[1][0]+
-				", "+evaluation.confusionMatrix()[1][1]+", "+evaluation.numTruePositives(0)+", "+ evaluation.numFalsePositives(0)+", "+ 
-				evaluation.trueNegativeRate(1)+", "+evaluation.falseNegativeRate(1);
-		log.info("{}", confusion); 
-		String correct = String.valueOf(evaluation.correct());
-		log.info("{}", correct);
-		String incorrect = String.valueOf(evaluation.incorrect());
-		log.info("{}", incorrect);
-		String precision = String.valueOf(evaluation.precision(1));
-		log.info("{}", precision);
-		
-		
-		log.info("num of instances: {}, correct: {}, incorrect: {}, percentageCorrect: {}, percentageIncorrect:{}", 
-				evaluation.numInstances(), evaluation.correct(), evaluation.incorrect(), evaluation.pctCorrect(), evaluation.pctIncorrect());
-		String numTruePositives = String.valueOf(evaluation.numTruePositives(0));
-		log.info("{}", numTruePositives);
-		String numFalsePositives = String.valueOf(evaluation.numTruePositives(0));
-		log.info("{}", numFalsePositives);
-		
 		double sizeDataset =  trainingSet.numInstances() + (double)testingSet.numInstances();
 		double trainingPercentage = trainingSet.numInstances()/ sizeDataset;
 		
@@ -291,9 +291,12 @@ public class MachineLearning {
 		dataset.setDefectiveInTestPerc(defectiveInTestPerc);
 		dataset.setClassifier(classifier);
 		dataset.setFeature(feature);
+		if (sensType==null) dataset.setSensitivity("NO_COST_SENSITIVE");
+		else if (Boolean.TRUE.equals(sensType)) dataset.setSensitivity("SENSITIVE_THRESHOLD");
+		else dataset.setSensitivity("SENSITIVE_LEARNING");
 		dataset.setTrainingPercentage(trainingPercentage);
 		dataset.setSampling(sampling); 
-		dataset.setTruePositive(evaluation.numTruePositives(0)); 
+		dataset.setTruePositive(evaluation.numTruePositives(0));
 		dataset.setFalsePositive(evaluation.numFalsePositives(0)); 
 		dataset.setTrueNegative(evaluation.numTruePositives(1));
 		dataset.setFalseNegative(evaluation.numFalsePositives(1)); 
@@ -302,10 +305,51 @@ public class MachineLearning {
 		dataset.setRocArea(evaluation.areaUnderROC(1)); 
 		dataset.setKappa(evaluation.kappa());
 		
-		
 		datasets.add(dataset);
 	}
-	
+		
+	/**
+	 * Building classifiers differently based on the sensitivity.
+	 * @param sensType, classifier sensitivity type;
+	 * @param cl, classifier;
+	 * @param training, fold of data-set used as training;
+	 * @param testing, fold of data-set used as testing.
+	 * @return
+	 */
+	private static Evaluation buildModel(Boolean sensType, weka.classifiers.Classifier cl,
+			Instances training, Instances testing) {
+		Evaluation eval = null;
+		if (sensType==null) {
+			if (cl!=null) {
+				try {
+					cl.buildClassifier(training);
+					eval = new Evaluation(testing);
+					eval.evaluateModel(cl, testing);
+				} catch (Exception e) {
+					log.info(e.getMessage());
+				}
+			}
+		}
+		
+		else {
+			CostSensitiveClassifier csc = new CostSensitiveClassifier();
+			CostMatrix costMatrix = costMatrix(10.0, 1.0);
+			csc.setClassifier(cl);
+			csc.setCostMatrix(costMatrix);
+			csc.setMinimizeExpectedCost(sensType);
+			if (cl!=null) {
+				try {
+					csc.buildClassifier(training);
+					eval = new Evaluation(testing, csc.getCostMatrix());
+					eval.evaluateModel(csc, testing);
+				} catch (Exception e) {
+					log.info(e.getMessage());
+				}
+			}
+		}
+		return eval;
+	}
+
 	/**
 	 * Calculating the buggy label percentage in the selected data-set fold.
 	 * This method is used both for the defecting percentage in test-set and 
@@ -340,5 +384,4 @@ public class MachineLearning {
 		
 		return no/numInstancesDouble;
 	}
-
 }
