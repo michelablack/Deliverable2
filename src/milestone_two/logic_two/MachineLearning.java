@@ -273,8 +273,6 @@ public class MachineLearning {
 			break;
 		}
 		Evaluation evaluation = buildModel(sensType,cl,training, testing);
-		
-
 		if (Objects.isNull(evaluation)) {
 			return;
 		}
@@ -298,11 +296,11 @@ public class MachineLearning {
 		dataset.setSampling(sampling); 
 		dataset.setTruePositive(evaluation.numTruePositives(0));
 		dataset.setFalsePositive(evaluation.numFalsePositives(0)); 
-		dataset.setTrueNegative(evaluation.numTruePositives(1));
-		dataset.setFalseNegative(evaluation.numFalsePositives(1)); 
-		dataset.setPrecision(evaluation.precision(1)); 
-		dataset.setRecall(evaluation.recall(1));
-		dataset.setRocArea(evaluation.areaUnderROC(1)); 
+		dataset.setTrueNegative(evaluation.numTrueNegatives(0));
+		dataset.setFalseNegative(evaluation.numFalseNegatives(0)); 
+		dataset.setPrecision(evaluation.precision(0)); 
+		dataset.setRecall(evaluation.recall(0));
+		dataset.setRocArea(evaluation.areaUnderROC(0)); 
 		dataset.setKappa(evaluation.kappa());
 		
 		datasets.add(dataset);
